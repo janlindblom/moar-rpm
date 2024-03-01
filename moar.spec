@@ -11,6 +11,10 @@ BuildRequires:  make, git, go
 BuildRequires:  golang >= 1.16
 
 
+%description
+Moar is a pager.
+It's designed to just do the right thing without any configuration. 
+
 %prep
 %autosetup -n %{name}-%{version}
 
@@ -30,5 +34,5 @@ install -m 0755 %{name} %{buildroot}%{_bindir}/%{name}
 %{_bindir}/%{name}
 
 %changelog
-* Fri March 1 2024 Jan Lindblom <janlindblom@fastmail.fm> - 1.23.6-1
+* Fri Mar 01 2024 Jan Lindblom <janlindblom@fastmail.fm> - 1.23.6-1
 - First moar package
